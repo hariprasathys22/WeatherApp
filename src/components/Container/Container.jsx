@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './Container.css'
 import TopContainer from './top-container/TopContainer'
+import Info from './MidContent/Info'
 
 
 const Container = () => {
@@ -12,7 +13,8 @@ const Container = () => {
   return (
     <div className="container">
       <TopContainer />
-      <hr size="1"/>      
+      <hr size="1"/> 
+      <Info />     
     </div>
   )
 }

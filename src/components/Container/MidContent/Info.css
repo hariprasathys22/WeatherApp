@@ -1,0 +1,87 @@
+.info-container{
+    width: 100%;
+    padding: 15px 25px;
+}
+.info-container .info-head{
+    width: 100%;
+    padding: 20px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-container .info-head .info-head-overview p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.info-container .info-head .moredetail{
+    display: flex;
+    flex-direction: row;
+}
+.info-container .info-head .moredetail a{
+    text-decoration: none;
+    font-weight: 16px;
+    margin-right: 4px;
+}
+.info-container .info-head .moredetail .asa{
+    margin-top: 3px;
+    font-size: 18px;
+    color: hsl(199, 83%, 36%)
+}
+.info-container .weather-contain{
+    width: 100%;
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.info-container .weather-contain .wind-speed-we{
+    height: 90px;
+    width: 24.5vw;
+    margin-top:10px;
+    background-color: rgb(247, 251, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-container .weather-contain .info-logo .ios{
+    color: hsl(199, 83%, 36%);
+    position: relative;
+    font-size: 30px;
+}
+.info-container .weather-contain .wind-speed-meter{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-container .weather-contain .wind-speed-meter p{
+    font-weight: 400;
+    color: #aaaaaa;
+    font-size: 12px;
+}
+.info-container .weather-contain .wind-speed-meter .speed-km h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+.info-container .weather-contain .speed-flow{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.info-container .weather-contain .speed-flow .ios1{
+    font-size: 11px;
+    margin-right: 5px;
+    color: #d33535;
+
+}
+
+.info-container .weather-contain .speed-flow .speed-flow-hr{
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 400;
+}
