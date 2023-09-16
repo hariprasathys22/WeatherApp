@@ -4,7 +4,7 @@ import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import { BsCloudHaze2 } from "react-icons/bs";
 import "./Info.css";
 
-const Info = () => {
+const Info = ({data, rateOfChange, currentWindSpeed, rainChance}) => {
   return (
     <div className="info-container">
       <div className="info-head">
@@ -26,13 +26,15 @@ const Info = () => {
               <p className="speed-para">Wind Speed</p>
             </div>
             <div className="speed-km">
-              <h2 className="speed-headkm-head">12km/h</h2>
+              <h2 className="speed-headkm-head">{currentWindSpeed}km/h</h2>
             </div>
           </div>
           <div className="speed-flow">
             <AiOutlineCaretDown className="ios1" />
 
-            <p className="speed-flow-hr">2km/h</p>
+           {rateOfChange !== null && (
+               <p className="speed-flow-hr">{rateOfChange}</p>
+            )}
           </div>
         </div>
         <div className="wind-speed-we">
@@ -44,7 +46,7 @@ const Info = () => {
               <p className="speed-para">Rain Chanse</p>
             </div>
             <div className="speed-km">
-              <h2 className="speed-headkm-head">24%</h2>
+              <h2 className="speed-headkm-head">{rainChance}%</h2>
             </div>
           </div>
           <div className="speed-flow">
