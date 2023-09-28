@@ -42,7 +42,7 @@
     background-color: rgb(247, 251, 255);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
 }
 
@@ -53,6 +53,7 @@
 }
 .info-container .weather-contain .wind-speed-meter{
     position: relative;
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
